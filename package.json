@@ -1,0 +1,23 @@
+{
+  "name": "wavecrest",
+  "version": "1.0.0",
+  "description": "Wavecrest Guest House Website",
+  "main": "index.html",
+  "dependencies": {
+    "bower": "^1.3.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damnfine/wavecrest.git"
+  },
+  "author": "Damn Fine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damnfine/wavecrest/issues"
+  },
+  "homepage": "http://thewavecrest.com"
+}

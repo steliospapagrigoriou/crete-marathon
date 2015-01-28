@@ -1,0 +1,50 @@
+.icon, .logo {
+	position: relative;
+	margin: 0;
+	padding: 0;
+  border: 0;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+.icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+.icon.icon--carat {
+  width: 16px;
+  height: 16px;
+  background-image: url(/img/icon-carat.png);
+  background-image: url(/svg/icon-carat.svg);
+}
+
+.icon--news {
+	background-image: url(/img/icon-news.png);
+//  background-image: url(/svg/icon-play.svg);
+}
+.icon--about {
+	background-image: url(/img/icon-about.png);
+//  background-image: url(/svg/icon-play.svg);
+}
+.icon--films {
+	background-image: url(/img/icon-films.png);
+//  background-image: url(/svg/icon-play.svg);
+}
+
+.logo {
+  width: 431px;
+  height: 91px;
+}
+
+.logo--marathon {
+  background-image: url(/img/logo-marathon-w.png);
+  &.logo--marathon--yellow {
+    background-image: url(/img/logo-marathon-y.png);
+  }
+}

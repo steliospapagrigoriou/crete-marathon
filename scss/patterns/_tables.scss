@@ -1,0 +1,20 @@
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+table {
+  margin: 1.5rem 0;
+}
+
+th {
+  color: $white;
+  background-color: $ocean;
+}
+
+td {
+  border-bottom: 1px solid $sky;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+}

@@ -1,0 +1,20 @@
+.timeline {
+  display: none;
+}
+
+.timeline__backup {
+  display: block !important;
+}
+
+section {
+	padding: 80px 0 40px 0;
+}
+
+.contact__form label {
+  display: block !important;
+}
+
+.contact__form input[type="email"],
+.contact__form input[type="text"] {
+  width: 100%;
+}
