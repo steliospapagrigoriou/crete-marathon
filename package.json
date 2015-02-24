@@ -1,0 +1,22 @@
+{
+  "name": "crete_marathon",
+  "version": "1.0.0",
+  "description": "Crete Marathon Website",
+  "main": "js/script.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damnfine/crete-marathon.git"
+  },
+  "author": "ben@damnfine.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damnfine/crete-marathon/issues"
+  },
+  "homepage": "https://github.com/damnfine/crete-marathon",
+  "devDependencies": {
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.3",
+    "karma-jasmine": "^0.3.5"
+  }
+}
