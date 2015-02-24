@@ -10,7 +10,7 @@ deployment:
     branch: /release.*/
     commands:
       - bundle exec cap staging deploy
-  master:
-    branch: master
-    commands:
-      - bundle exec cap production deploy
+# master:
+#   branch: master
+#   commands:
+#     - bundle exec cap production deploy
