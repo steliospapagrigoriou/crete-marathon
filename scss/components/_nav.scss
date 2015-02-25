@@ -1,0 +1,80 @@
+/*  § NAVIGATION & FOOTER  */
+/*  ---------------------  */
+
+//  1. Primary Nav
+//  2. Footer
+
+
+
+//  1. Primary Nav
+//  --------------
+.nav--primary {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  padding: 0 50px;
+  border-bottom: 1px solid $grey-1;
+  background-color: $white;
+  .logo--primary {
+    top: -10px;
+    margin: 5px 20px;
+    width: 107px;
+    height: 60px;
+  }
+}
+
+.logo__wrapper {
+  float: left;
+  height: 100%;
+  background-color: $ocean;
+  box-shadow: -100px 0 0 $ocean;
+}
+
+.nav__links {
+  float: right;
+  height: 100%;
+}
+
+.nav__link {
+  @extend .epsilon;
+  position: relative;
+  float: left;
+  display: inline-block;
+  height: 100%;
+  padding: 0 20px;
+  color: $ocean-alt;
+  line-height: 70px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  &:hover { color: $ocean; }
+}
+
+.nav__link--cta {
+  @extend .nav__link;
+  background-color: $ocean-alt;
+  color: $white;
+  &:hover {
+    background-color: $sand;
+    color: $white;
+  }
+  .caret {
+    border-top-color: $white;
+  }
+  &.is-active {
+    background-color: $sand;
+    .caret {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+  }
+}
+
+//  2. Footer
+//  --------------
+.footer {
+  padding: 2rem 0;
+  background-color: $ocean;
+  color: $white;
+  text-align: center;
+}

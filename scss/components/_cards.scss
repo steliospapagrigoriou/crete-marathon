@@ -1,0 +1,54 @@
+.card {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: $white;
+  background-color: rgba($white,0.8);
+  .close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    box-sizing: content-box; 
+    border: 1px solid $sky;
+    border-radius: 50%;
+    color: $sky;
+    text-align: center;
+    line-height: 16px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    &:hover {
+      background-color: $ocean;
+      color: $white;
+    }
+  }
+}
+
+.card--current-conditions {
+  @extend .card;
+  .card__section {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $grey-1;
+    .weather-icon {
+      margin: 0 auto;
+      display: block;
+      width:  150px;
+      height: 150px;
+    }
+    .kilo {
+      display: block;
+      margin: 0;
+      text-align: center;
+    }
+  }
+  div:last-of-type {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.card--about-us {
+  @extend .card;
+  margin: 0;
+  margin-left: 4%;
+  background-color: $grey-1;
+}

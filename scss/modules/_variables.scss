@@ -1,0 +1,50 @@
+/*  § Variables  */
+/*  -----------  */
+
+//  1. Type
+//  1. Colors
+//  2. Box Shadows
+
+
+//  1. Type
+//  ---------
+$base-font-size: 16px;
+
+$h1-size: 36px; // .alpha
+$h2-size: 30px; // .beta
+$h3-size: 24px; // .gamma
+$h4-size: 20px; // .delta
+$h5-size: 16px; // .epsilon
+$h6-size: 14px; // .zeta
+
+$giga-size: 96px;
+$mega-size: 72px;
+$kilo-size: 48px;
+
+
+
+//  1. Colors
+//  ---------
+$black: #333;
+$white: #fff;
+$grey-1: #EEF1F2;
+$grey-2: #7F8C8D;
+$sky: #5ECFF6;
+$sky-alt: #49C2EC;
+$sand: #FFDD00;
+$sand-alt: #FFE958;
+$ocean: #015780;
+$ocean-alt: #0067B1;
+$red: #e74c3c;
+
+
+
+//  2. Box Shadows
+//  --------------
+//  Higher number = deeper shadow
+$shadow-1: 0 1px 2px 0 rgba($black,0.20), 0 1px 3px 0 rgba($black,0.10);
+$shadow-2: 0 3px 6px 0 rgba($black,0.23), 0 3px 6px 0 rgba($black,0.16);
+$shadow-3: 0 6px 6px 0 rgba($black,0.26), 0 10px 20px 0 rgba($black,0.19);
+$shadow-4: 0 10px 10px 0 rgba($black,0.26), 0 14px 28px 0 rgba($black,0.25);
+$shadow-5: 0 15px 12px 0 rgba($black,0.22), 0 19px 38px 0 rgba($black,0.30);
+
