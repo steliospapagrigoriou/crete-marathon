@@ -4,9 +4,9 @@
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :web, %w{git@experimental-crete.damnfine.io}
+role :web, %w{git@alpha-crete.damnfine.io}
 
-set :deploy_to, '/opt/experimental/crete-marathon'
+set :deploy_to, '/opt/alpha/crete-marathon'
 
 # Extended Server Syntax
 # ======================

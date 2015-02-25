@@ -7,11 +7,11 @@ deployment:
   feature:
     branch: /feature.*/
     commands:
-      - bundle exec cap experimental deploy
+      - bundle exec cap alpha deploy
   release:
     branch: /release.*/
     commands:
-      - bundle exec cap staging deploy
+      - bundle exec cap beta deploy
 # master:
 #   branch: master
 #   commands:
