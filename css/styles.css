@@ -3,8 +3,7 @@
 /*  -----------  */
 /*  § RESET  */
 /*  -------  */
-@import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,900italic);
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -47,18 +46,18 @@ audio:not([controls]) {
   display: none; }
 
 html {
-  font-family: 'Dosis', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #7F8C8D;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
 a {
-  color: #90C695;
+  color: #5ECFF6;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   a:hover {
-    color: #90C695; }
+    color: #49C2EC; }
 
 body {
   margin: 0; }
@@ -214,9 +213,10 @@ h1, h2, h3, h4, h5, h6,
 .alpha, .beta, .gamma, .delta, .epsilon, .nav__link, .zeta,
 .giga, .mega, .kilo {
   margin-bottom: 1.2rem;
-  font-family: 'Roboto Slab', Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  color: #90C695;
+  font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: #015780;
   line-height: 1.2; }
 
 h1, .alpha {
@@ -408,7 +408,7 @@ section {
 
 /*  § Buttons  */
 /*  ---------  */
-.btn, .btn--green, .btn--large, .btn--small,
+.btn, .btn--ocean, .btn--large, .btn--small,
 button,
 input[type="button"],
 input[type="submit"] {
@@ -424,13 +424,13 @@ input[type="submit"] {
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  .btn:hover, .btn--green:hover, .btn--large:hover, .btn--small:hover,
+  .btn:hover, .btn--ocean:hover, .btn--large:hover, .btn--small:hover,
   button:hover,
   input[type="button"]:hover,
   input[type="submit"]:hover {
     background-color: #7F8C8D;
     border-color: #7F8C8D; }
-  .btn.is-disabled, .is-disabled.btn--green, .is-disabled.btn--large, .is-disabled.btn--small,
+  .btn.is-disabled, .is-disabled.btn--ocean, .is-disabled.btn--large, .is-disabled.btn--small,
   button.is-disabled,
   input[type="button"].is-disabled,
   input[type="submit"].is-disabled {
@@ -438,13 +438,12 @@ input[type="submit"] {
     cursor: default;
     pointer-events: none; }
 
-.btn--green {
-  background-color: #90C695;
-  border-color: #90C695;
+.btn--ocean {
+  background-color: #015780;
+  border-color: #015780;
   color: #fff; }
-  .btn--green:hover {
-    border-color: #90C695;
-    background-color: #90C695; }
+  .btn--ocean:hover {
+    color: #FFDD00; }
 
 .btn--large {
   font-size: 1.15rem; }
@@ -455,12 +454,12 @@ input[type="submit"] {
 
 .btn-group {
   margin: 0.5rem 0; }
-  .btn-group .btn, .btn-group .btn--green, .btn-group .btn--large, .btn-group .btn--small {
+  .btn-group .btn, .btn-group .btn--ocean, .btn-group .btn--large, .btn-group .btn--small {
     float: left;
     margin: 0;
     margin-left: -1px;
     border-radius: 0; }
-    .btn-group .btn:hover, .btn-group .btn--green:hover, .btn-group .btn--large:hover, .btn-group .btn--small:hover {
+    .btn-group .btn:hover, .btn-group .btn--ocean:hover, .btn-group .btn--large:hover, .btn-group .btn--small:hover {
       z-index: 5; }
   .btn-group *:first-of-type {
     border-radius: 3px 0 0 3px; }
@@ -471,13 +470,13 @@ input[type="submit"] {
   margin: 0.5rem;
   margin-left: -4px;
   display: inline-block; }
-  .btn-group--vertical .btn, .btn-group--vertical .btn--green, .btn-group--vertical .btn--large, .btn-group--vertical .btn--small {
+  .btn-group--vertical .btn, .btn-group--vertical .btn--ocean, .btn-group--vertical .btn--large, .btn-group--vertical .btn--small {
     margin: 0;
     margin-top: -1px;
     display: block;
     border-radius: 0;
     text-align: center; }
-    .btn-group--vertical .btn:hover, .btn-group--vertical .btn--green:hover, .btn-group--vertical .btn--large:hover, .btn-group--vertical .btn--small:hover {
+    .btn-group--vertical .btn:hover, .btn-group--vertical .btn--ocean:hover, .btn-group--vertical .btn--large:hover, .btn-group--vertical .btn--small:hover {
       z-index: 5; }
   .btn-group--vertical *:first-of-type {
     border-radius: 3px 3px 0 0; }
@@ -490,7 +489,7 @@ input[type="submit"] {
   border: 1px solid #EEF1F2;
   border-radius: 3px; }
   .input:focus, .input--text:focus {
-    border-color: #90C695; }
+    border-color: #5ECFF6; }
 
 label, .input-label {
   color: #7F8C8D;
@@ -562,7 +561,8 @@ label, .input-label {
   width: 100%;
   height: 70px;
   padding: 0 100px;
-  border-bottom: 1px solid #EEF1F2; }
+  border-bottom: 1px solid #EEF1F2;
+  background-color: #fff; }
   .nav--primary .logo--primary {
     top: -10px;
     margin: 5px 20px;
@@ -571,7 +571,7 @@ label, .input-label {
 
 .logo__wrapper {
   height: 100%;
-  background-color: #90C695; }
+  background-color: #015780; }
 
 .nav__links {
   float: right;
@@ -583,7 +583,7 @@ label, .input-label {
   display: inline-block;
   height: 100%;
   padding: 0 20px;
-  color: #90C695;
+  color: #015780;
   line-height: 70px;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
@@ -591,7 +591,7 @@ label, .input-label {
 
 .footer {
   padding: 2rem 0;
-  background-color: #90C695;
+  background-color: #015780;
   color: #fff;
   text-align: center; }
 
@@ -606,15 +606,15 @@ label, .input-label {
     top: 0.5rem;
     right: 0.5rem;
     box-sizing: content-box;
-    border: 1px solid #90C695;
+    border: 1px solid #5ECFF6;
     border-radius: 50%;
-    color: #90C695;
+    color: #5ECFF6;
     text-align: center;
     line-height: 16px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
     .card .close:hover, .card--current-conditions .close:hover, .card--about-us .close:hover {
-      background-color: #90C695;
+      background-color: #015780;
       color: #fff; }
 
 .card--current-conditions .card__section {
@@ -642,7 +642,7 @@ label, .input-label {
   right: 50px;
   display: inline-block;
   padding: 1rem;
-  border-bottom: 5px solid #90C695;
+  border-bottom: 5px solid #015780;
   -webkit-transform: translateY(-500px);
   transform: translateY(-500px);
   -webkit-transition: all 0.3s ease;
