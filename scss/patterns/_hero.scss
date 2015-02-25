@@ -14,4 +14,5 @@
 .hero--home {
   @extend .hero;
   min-height: 500px;
+  background-image: url(/img/bg-00.png);
 }
