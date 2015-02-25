@@ -28,6 +28,17 @@
   .card__section {
     margin-bottom: 1rem;
     border-bottom: 1px solid $grey-1;
+    .weather-icon {
+      margin: 0 auto;
+      display: block;
+      width:  150px;
+      height: 150px;
+    }
+    .kilo {
+      display: block;
+      margin: 0;
+      text-align: center;
+    }
   }
   div:last-of-type {
     margin-bottom: 0;

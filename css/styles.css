@@ -668,6 +668,15 @@ label, .input-label {
 .card--current-conditions .card__section {
   margin-bottom: 1rem;
   border-bottom: 1px solid #EEF1F2; }
+  .card--current-conditions .card__section .weather-icon {
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+    height: 150px; }
+  .card--current-conditions .card__section .kilo {
+    display: block;
+    margin: 0;
+    text-align: center; }
 .card--current-conditions div:last-of-type {
   margin-bottom: 0;
   border-bottom: none; }
@@ -719,9 +728,6 @@ label, .input-label {
   background-image: url(/img/bg-03.jpg);
   background-size: cover;
   background-position: center center; }
-
-.page--sponsors .masthead {
-  background-image: url(/img/bg-01.jpg); }
 
 /*  § UTILITIES  */
 /*  -----------  */
