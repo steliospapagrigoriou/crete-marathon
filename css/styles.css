@@ -555,6 +555,15 @@ label, .input-label {
   min-height: 500px;
   background-image: url(/img/bg-00.png); }
 
+.thumbnail {
+  margin: 0.5rem;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #EEF1F2;
+  background-color: #EEF1F2;
+  box-shadow: inset 0 0 0 1px #fff; }
+
 .angle-section {
   position: relative;
   background-color: #015780;

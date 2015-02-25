@@ -1,0 +1,9 @@
+.thumbnail {
+  margin: 0.5rem;
+  display: inline-block;
+  width:  150px;
+  height: 150px;
+  border: 1px solid $grey-1;
+  background-color: $grey-1;
+  box-shadow: inset 0 0 0 1px $white;
+}
