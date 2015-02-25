@@ -2,7 +2,7 @@
   "name": "crete_marathon",
   "version": "1.0.0",
   "description": "Crete Marathon Website",
-  "main": "js/script.js",
+  "main": "js/crete.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/damnfine/crete-marathon.git"
