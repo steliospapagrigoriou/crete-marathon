@@ -1,0 +1,60 @@
+/*  § TYPOGRAPHY  */
+/*  ------------  */
+
+//  1. Imports
+//  2. Headings
+//  3. Paragraphs
+
+
+//  1. Imports
+//  -----------
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700);
+
+
+
+//  2. Headings
+//  -----------
+//  When we define a heading we also define a corresponding class to go with it. This allows us to apply, say, `class=alpha` to a `h3`; a double-stranded heading hierarchy
+h1, h2, h3, h4, h5, h6,
+.alpha, .beta, .gamma, .delta, .epsilon, .zeta,
+.giga, .mega, .kilo {
+  margin-bottom: 1.2rem;
+  font-family: 'Roboto Slab', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: $green-1;
+  line-height: 1.2;
+}
+
+h1, .alpha   { font-size: $h1-size; }
+h2, .beta    { font-size: $h2-size; }
+h3, .gamma   { font-size: $h3-size; }
+h4, .delta   { font-size: $h4-size; }
+h5, .epsilon { font-size: $h5-size; }
+h6, .zeta    { font-size: $h6-size; }
+
+// Heading groups
+hgroup {
+  h1, h2, h3, h4, h5, h6,
+  .alpha, .beta, .gamma, .delta, .epsilon, .zeta {
+    margin-bottom:0;
+  }
+}
+
+//  A series of classes for setting massive type; for use in heroes, mastheads, promos, etc.
+.giga { font-size: $giga-size; }
+.mega { font-size: $mega-size; }
+.kilo { font-size: $kilo-size; }
+
+
+
+//  3. Paragraphs
+//  -------------
+p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+//  The '.lede' class is used to make the introductory text (usually a paragraph) of a document slightly larger
+.lede, .lead { font-size: 1.125rem; }

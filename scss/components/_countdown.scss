@@ -1,0 +1,16 @@
+.countdown {
+  background-color: $grey-1;
+}
+
+.countdown--home {
+  @extend .countdown;
+  padding: 5rem 0 4rem 0;
+  background-image: url(/img/bg-02.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom;
+  h3, .mega {
+    color: $white;
+    text-shadow: $shadow-1;
+  }
+}
