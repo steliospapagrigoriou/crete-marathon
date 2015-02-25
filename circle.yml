@@ -1,4 +1,6 @@
 test:
+  pre:
+    - node_modules/.bin/bower install
   post:
     - node_modules/karma/bin/karma start karma.conf.js --single-run
 deployment:
