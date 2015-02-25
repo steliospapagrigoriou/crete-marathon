@@ -16,6 +16,15 @@ $(document).ready(function() {
   }
 });
 
+var day, today = moment();
+
 function updateTemperature(data){
-  $('#temperature_value').html(Math.ceil(data.currently.temperature)+'&deg;')
+  console.log(data);
+  $('#weather_temperature').html(Math.ceil(data.currently.temperature)+'&deg;');
+  $('#weather_icon').attr('src','/img/icons-weather/'+data.currently.icon+'.png');
+
+  for(var i=0; i < data.daily.data.length; i++){
+    day = today.add(i, 'days')
+    $('#weather_forecast').append('<p>'+day.format('dddd')+' <img class="weather-icon__forecast" src="/img/icons-weather/'+data.daily.data[i].icon+'.png">'+Math.ceil(data.daily.data[i].temperatureMax)+'&deg;</p>');
+  }
 };

@@ -673,6 +673,11 @@ label, .input-label {
     display: block;
     width: 150px;
     height: 150px; }
+  .card--current-conditions .card__section .weather-icon__forecast {
+    margin: 0 auto;
+    display: block;
+    width: 50px;
+    height: 50px; }
   .card--current-conditions .card__section .kilo {
     display: block;
     margin: 0;

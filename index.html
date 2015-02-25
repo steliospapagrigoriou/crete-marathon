@@ -41,17 +41,18 @@
         
         <div class="card__section">
           <span class="input-label">Current Conditions</span>
-          <img class="weather-icon" src="/img/icon-weather.png">
+          <img id="weather_icon" class="weather-icon" src="">
         </div>
         
         <div class="card__section">
           <span class="input-label">Temperature</span>
-          <span id="temperature_value" class="kilo"></kilo>
+          <span id="weather_temperature" class="kilo"></kilo>
         </div>
         
-        <!--<div class="card__section">
+        <div class="card__section">
           <span class="input-label">Forecast</span>
-        </div>-->
+          <div id="weather_forecast"></div>
+        </div>
       </div>
       
       <div class="twelve columns form--booking">
@@ -187,7 +188,8 @@
   
   
   
-  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/moment/min/moment.min.js"></script>
   <script src="/js/crete.js"></script>
 </body>
 </html>
