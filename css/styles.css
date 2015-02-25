@@ -552,7 +552,28 @@ label, .input-label {
     top: 80px; }
 
 .hero--home {
-  min-height: 500px; }
+  min-height: 500px;
+  background-image: url(/img/bg-00.png); }
+
+.angle-section {
+  position: relative;
+  background-color: #015780;
+  color: #fff; }
+  .angle-section h2 {
+    color: #FFDD00; }
+  .angle-section:before, .angle-section:after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #015780;
+    -webkit-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    content: ""; }
+  .angle-section:before {
+    top: -25px; }
+  .angle-section:after {
+    bottom: -25px; }
 
 /*  § NAVIGATION & FOOTER  */
 /*  ---------------------  */
@@ -570,8 +591,10 @@ label, .input-label {
     height: 60px; }
 
 .logo__wrapper {
+  float: left;
   height: 100%;
-  background-color: #015780; }
+  background-color: #015780;
+  box-shadow: -100px 0 0 #015780; }
 
 .nav__links {
   float: right;

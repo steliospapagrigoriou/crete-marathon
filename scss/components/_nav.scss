@@ -24,8 +24,10 @@
 }
 
 .logo__wrapper {
+  float: left;
   height: 100%;
-  background-color: $ocean; 
+  background-color: $ocean;
+  box-shadow: -100px 0 0 $ocean;
 }
 
 .nav__links {
