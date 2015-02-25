@@ -9,15 +9,15 @@
     top: 0.5rem;
     right: 0.5rem;
     box-sizing: content-box; 
-    border: 1px solid $green-1;
+    border: 1px solid $sky;
     border-radius: 50%;
-    color: $green-1;
+    color: $sky;
     text-align: center;
     line-height: 16px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     &:hover {
-      background-color: $green-1;
+      background-color: $ocean;
       color: $white;
     }
   }

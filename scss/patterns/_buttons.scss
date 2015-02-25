@@ -36,14 +36,13 @@ input[type="submit"] {
   }
 }
 
-.btn--green {
+.btn--ocean {
   @extend .btn;
-  background-color: $green-1;
-  border-color: $green-1;
+  background-color: $ocean;
+  border-color: $ocean;
   color: $white;
   &:hover {
-    border-color: $green-1;
-    background-color: $green-1;
+    color: $sand;
   }
 }
 
