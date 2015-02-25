@@ -590,7 +590,7 @@ label, .input-label {
   position: fixed;
   width: 100%;
   height: 70px;
-  padding: 0 100px;
+  padding: 0 50px;
   border-bottom: 1px solid #EEF1F2;
   background-color: #fff; }
   .nav--primary .logo--primary {
@@ -629,6 +629,13 @@ label, .input-label {
   .nav__link--cta:hover {
     background-color: #0067B1;
     color: #fff; }
+  .nav__link--cta .caret {
+    border-top-color: #fff; }
+  .nav__link--cta.is-active {
+    background-color: #0067B1; }
+    .nav__link--cta.is-active .caret {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg); }
 
 .footer {
   padding: 2rem 0;
