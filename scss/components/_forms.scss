@@ -1,0 +1,29 @@
+.signup-form {
+  background-color: $white;
+  label {
+    display: block;
+  }
+  input {
+    display: inline-block;
+  }
+}
+
+.signup-form--flyout {
+  @extend .signup-form;
+  position: fixed;
+  top: 70px;
+  right: 50px;
+  display: inline-block;
+  padding: 1rem;
+  border-bottom: 5px solid $green-1;
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  &.is-active {
+    visibility: visible;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  
+}

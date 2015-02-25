@@ -1,0 +1,24 @@
+/*  § LOGOS  */
+/*  -------  */
+
+.logo {
+  position: relative;
+	margin: 0;
+	display: inline-block;
+	padding: 0;
+  border: 0;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+.logo--primary {
+  @extend .logo;
+  width: 150px;
+  height: 70px;
+  background-image: url(/img/logo-primary.png);
+//  background-image: url(/svg/logo-primary.svg);
+}

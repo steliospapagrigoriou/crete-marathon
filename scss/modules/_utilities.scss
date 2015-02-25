@@ -1,0 +1,38 @@
+/*  § UTILITIES  */
+/*  -----------  */
+
+//  1. Floats
+//  2. Sizing
+//  3. Text Alignment
+//  4. Font Weights
+
+
+
+//  1. Floats
+//  ---------
+.u-float--right { float: right !important; }
+.u-float--left  { float: left !important; }
+.u-float--none  { float: none !important; }
+
+
+
+//  2. Sizing
+//  ---------
+.u-full-width     { width: 100%; }
+.u-max-full-width { max-width: 100%; }
+
+
+
+//  3. Text Alignment
+//  -----------------
+.u-text-left   { text-align: left !important; }
+.u-text-center { text-align: center !important; }
+.u-text-right  { text-align: right !important; }
+
+
+
+//  4. Font Weights
+//  ---------------
+.u-weight-light   { font-weight: 300 !important; }
+.u-weight-normal  { font-weight: 400 !important; }
+.u-weight-bold    { font-weight: 600 !important; }
