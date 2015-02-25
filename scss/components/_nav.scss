@@ -52,17 +52,17 @@
 
 .nav__link--cta {
   @extend .nav__link;
-  background-color: $sand;
+  background-color: $ocean-alt;
   color: $white;
   &:hover {
-    background-color: $ocean-alt;
+    background-color: $sand;
     color: $white;
   }
   .caret {
     border-top-color: $white;
   }
   &.is-active {
-    background-color: $ocean-alt;
+    background-color: $sand;
     .caret {
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg);
