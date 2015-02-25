@@ -15,6 +15,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'bower_components/karma/lib/karma.js',
+      'bower_components/jasmine/lib/jasmine-core.js',
+      'bower_components/jasmine-jquery/lib/jasmine-jquery.js',
+      'bower_components/jquery/dist/jquery.js',
       'js/*.js',
       'test/*Spec.js'
     ],
