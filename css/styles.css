@@ -210,7 +210,7 @@ table {
 /*  § TYPOGRAPHY  */
 /*  ------------  */
 h1, h2, h3, h4, h5, h6,
-.alpha, .beta, .gamma, .delta, .epsilon, .nav__link, .zeta,
+.alpha, .beta, .gamma, .delta, .epsilon, .nav__link, .nav__link--cta, .zeta,
 .giga, .mega, .kilo {
   margin-bottom: 1.2rem;
   font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -231,14 +231,14 @@ h3, .gamma {
 h4, .delta {
   font-size: 20px; }
 
-h5, .epsilon, .nav__link {
+h5, .epsilon, .nav__link, .nav__link--cta {
   font-size: 16px; }
 
 h6, .zeta {
   font-size: 14px; }
 
 hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6,
-hgroup .alpha, hgroup .beta, hgroup .gamma, hgroup .delta, hgroup .epsilon, hgroup .nav__link, hgroup .zeta {
+hgroup .alpha, hgroup .beta, hgroup .gamma, hgroup .delta, hgroup .epsilon, hgroup .nav__link, hgroup .nav__link--cta, hgroup .zeta {
   margin-bottom: 0; }
 
 .giga {
@@ -577,17 +577,26 @@ label, .input-label {
   float: right;
   height: 100%; }
 
-.nav__link {
+.nav__link, .nav__link--cta {
   position: relative;
   float: left;
   display: inline-block;
   height: 100%;
   padding: 0 20px;
-  color: #015780;
+  color: #0067B1;
   line-height: 70px;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+  .nav__link:hover, .nav__link--cta:hover {
+    color: #015780; }
+
+.nav__link--cta {
+  background-color: #FFDD00;
+  color: #fff; }
+  .nav__link--cta:hover {
+    background-color: #0067B1;
+    color: #fff; }
 
 .footer {
   padding: 2rem 0;

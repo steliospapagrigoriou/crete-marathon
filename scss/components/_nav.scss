@@ -40,11 +40,22 @@
   display: inline-block;
   height: 100%;
   padding: 0 20px;
-  color: $ocean;
+  color: $ocean-alt;
   line-height: 70px;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
+  &:hover { color: $ocean; }
+}
+
+.nav__link--cta {
+  @extend .nav__link;
+  background-color: $sand;
+  color: $white;
+  &:hover {
+    background-color: $ocean-alt;
+    color: $white;
+  }
 }
 
 //  2. Footer
