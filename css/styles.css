@@ -688,8 +688,10 @@ label, .input-label {
   .card--current-conditions .card__section .weather-icon__forecast {
     margin: 0 auto;
     display: block;
-    width: 50px;
-    height: 50px; }
+    /*
+          width:  50px;
+          height: 50px;
+    */ }
   .card--current-conditions .card__section .kilo {
     display: block;
     margin: 0;
@@ -697,6 +699,21 @@ label, .input-label {
 .card--current-conditions div:last-of-type {
   margin-bottom: 0;
   border-bottom: none; }
+
+#weather_forecast p {
+  float: left;
+  width: 25%;
+  padding-right: 5px;
+  font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #015780; }
+  #weather_forecast p img {
+    max-width: 80%; }
+  #weather_forecast p:last-of-type {
+    padding-right: 0; }
 
 .card--about-us {
   margin: 0;

@@ -25,6 +25,6 @@ function updateTemperature(data){
 
   for(var i=1; i <= 4; i++){
     day.add(1, 'days')
-    $('#weather_forecast').append('<p>'+day.format('dddd')+' <img class="weather-icon__forecast" src="/img/icons-weather/'+data.daily.data[i].icon+'.png">'+Math.ceil(data.daily.data[i].temperatureMax)+'&deg;</p>');
+    $('#weather_forecast').append('<p>'+day.format('ddd')+' <img class="weather-icon__forecast" src="/img/icons-weather/'+data.daily.data[i].icon+'.png">'+Math.ceil(data.daily.data[i].temperatureMax)+'&deg;</p>');
   }
 };
