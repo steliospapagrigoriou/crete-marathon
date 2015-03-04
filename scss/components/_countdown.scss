@@ -14,3 +14,21 @@
     text-shadow: $shadow-1;
   }
 }
+
+.countdown--small {
+  position: absolute;
+  top: 70px;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  font-weight: bold;
+  background-color: $sand;
+  color: $white;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    border-top: 35px solid $sand;
+    border-right: 20px solid transparent;
+    border-left: 0 solid transparent;
+  }
+}
