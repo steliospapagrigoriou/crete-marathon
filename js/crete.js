@@ -1,6 +1,5 @@
 $(document).ready(function() {  
   //sign-up form
-  /*
   $('#show_sign_up').click(function() {
     $(this).toggleClass('is-active');
     $('#top_signup_form').toggleClass('is-active');
@@ -16,13 +15,11 @@ $(document).ready(function() {
       }
     });
   }
-  */
 });
-/*
+
 var day = moment();
 
 function updateTemperature(data){
-  console.log(data);
   $('#weather_temperature').html(Math.ceil(data.currently.temperature)+'&deg;');
   $('#weather_icon').attr('src','/img/icons-weather/'+data.currently.icon+'.png');
 
@@ -31,8 +28,3 @@ function updateTemperature(data){
     $('#weather_forecast').append('<p>'+day.format('dddd')+' <img class="weather-icon__forecast" src="/img/icons-weather/'+data.daily.data[i].icon+'.png">'+Math.ceil(data.daily.data[i].temperatureMax)+'&deg;</p>');
   }
 };
-*/
-//landing animation
-  //var creteMap = $('#crete_map');
-  //TweenMax.to("#crete_map", 2, {css: { scale:5, x:30%, y:20% }});
-  TweenLite.to(".map-anim__wrapper", 2, {scale:5, x:"150%", y:"100%", delay:2});

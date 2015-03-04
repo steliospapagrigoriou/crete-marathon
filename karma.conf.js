@@ -15,9 +15,6 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'bower_components/gsap/src/minified/plugins/CSSPlugin.min.js',
-      'bower_components/gsap/src/minified/easing/EasePack.min.js',
-      'bower_components/gsap/src/minified/TweenLite.min.js',
       'bower_components/jquery/dist/jquery.min.js',
       'bower_components/moment/min/moment.min.js',
       'js/*.js',
