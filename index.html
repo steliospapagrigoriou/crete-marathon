@@ -34,10 +34,21 @@
   
   
   <section class="hero--home" id="home_hero">
+    <div class="map-anim__wrapper">
+      <img src="/svg/bg-map.svg" class="map-anim__map" id="crete_map">
+      <div class="race-marker--start" id="map_startline"></div>
+      <div class="race-marker--finish" id="map_finishline"></div>
+    </div>
+    
+<!--
+    <div class="map-route__wrapper">
+      
+    </div>
+-->
+    
     <div class="container">
       
       <div class="three columns offset-by-nine card--current-conditions">
-        <a class="close">&times;</a>
         
         <div class="card__section">
           <span class="input-label">Current Conditions</span>
@@ -187,9 +198,13 @@
   </footer>
   
   
-  
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <!--
   <script src="/bower_components/moment/min/moment.min.js"></script>
+  -->
   <script src="/js/crete.js"></script>
 </body>
 </html>

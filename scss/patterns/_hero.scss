@@ -13,6 +13,8 @@
 
 .hero--home {
   @extend .hero;
+  position: relative;
   min-height: 500px;
-  background-image: url(/img/bg-00.png);
+  background-color: $ocean;
+  overflow: hidden;
 }

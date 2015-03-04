@@ -552,8 +552,10 @@ label, .input-label {
     top: 80px; }
 
 .hero--home {
+  position: relative;
   min-height: 500px;
-  background-image: url(/img/bg-00.png); }
+  background-color: #015780;
+  overflow: hidden; }
 
 .thumbnail {
   margin: 0.5rem;
@@ -734,6 +736,49 @@ label, .input-label {
   background-size: cover;
   background-position: center center; }
 
+.map-anim__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 0 10px rgba(231, 76, 60, 0.5);
+  overflow: hidden; }
+
+.map-anim__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+/*
+.map-route__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 5px solid yellow;
+  z-index: 9999;
+}
+*/
+.race-marker, .race-marker--start, .race-marker--finish {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #FFDD00;
+  z-index: 20; }
+
+.race-marker--start {
+  top: 37%;
+  left: 15%; }
+
+.race-marker--finish {
+  top: 38%;
+  left: 20%; }
+
+@keyframes mapZoom {
+  100% {
+    transform: scale(5) translateX(30%) translateY(20%); } }
 /*  § UTILITIES  */
 /*  -----------  */
 .u-float--right {
