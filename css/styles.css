@@ -565,6 +565,7 @@ label, .input-label {
   position: relative;
   min-height: 500px;
   background-color: #015780;
+  background-image: url(/img/map.png);
   overflow: hidden; }
 
 .thumbnail {
