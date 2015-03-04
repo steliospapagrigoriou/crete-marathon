@@ -17,6 +17,6 @@
   min-height: 500px;
   background-color: $ocean;
   background-image: url(/img/map.png);
-  //background-image: url(/svg/map.svg);
+  //background-image: url(/svg/map.svg); //svg temporarily disabled due to firefox clipping issue
   overflow: hidden;
 }

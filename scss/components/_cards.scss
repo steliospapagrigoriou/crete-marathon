@@ -57,7 +57,6 @@
 #weather_forecast p {
   float: left;
   width: 25%;
-  padding-right: 5px;
   font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 900;
   font-style: italic;
@@ -66,9 +65,6 @@
   color: $ocean;
   img {
     max-width: 80%;
-  }
-  &:last-of-type {
-    padding-right: 0;
   }
 }
 
