@@ -4,6 +4,7 @@ $(document).ready(function() {
     $(this).toggleClass('is-active');
     $('#top_signup_form').toggleClass('is-active');
   });
+
   if($('#home_body').size() > 0){
     // on the home page
     $.ajax({
@@ -15,9 +16,18 @@ $(document).ready(function() {
       }
     });
   }
+
+  // display days left until marathon
+  $('.js-days-left').html(calculateDaysLeft());
 });
 
 var day = moment();
+
+function calculateDaysLeft(){
+  var today = moment();
+  var day_of_marathon = moment([2015,9,15]);
+  return day_of_marathon.diff(today, 'day');
+}
 
 function updateTemperature(data){
   $('#weather_temperature').html(Math.ceil(data.currently.temperature)+'&deg;');
