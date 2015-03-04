@@ -36,7 +36,8 @@ input[type="submit"] {
   }
 }
 
-.btn--ocean {
+.btn--ocean,
+input[type="submit"].btn--ocean {
   @extend .btn;
   background-color: $ocean;
   border-color: $ocean;

@@ -406,9 +406,13 @@ section {
 .nav--primary {
   z-index: 50; }
 
+.countdown--small {
+  z-index: 49; }
+
 /*  § Buttons  */
 /*  ---------  */
-.btn, .btn--ocean, .btn--large, .btn--small,
+.btn, .btn--ocean,
+input[type="submit"].btn--ocean, .btn--large, .btn--small,
 button,
 input[type="button"],
 input[type="submit"] {
@@ -424,13 +428,15 @@ input[type="submit"] {
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  .btn:hover, .btn--ocean:hover, .btn--large:hover, .btn--small:hover,
+  .btn:hover, .btn--ocean:hover,
+  input[type="submit"].btn--ocean:hover, .btn--large:hover, .btn--small:hover,
   button:hover,
   input[type="button"]:hover,
   input[type="submit"]:hover {
     background-color: #7F8C8D;
     border-color: #7F8C8D; }
-  .btn.is-disabled, .is-disabled.btn--ocean, .is-disabled.btn--large, .is-disabled.btn--small,
+  .btn.is-disabled, .is-disabled.btn--ocean,
+  input.is-disabled[type="submit"].btn--ocean, .is-disabled.btn--large, .is-disabled.btn--small,
   button.is-disabled,
   input[type="button"].is-disabled,
   input[type="submit"].is-disabled {
@@ -438,11 +444,13 @@ input[type="submit"] {
     cursor: default;
     pointer-events: none; }
 
-.btn--ocean {
+.btn--ocean,
+input[type="submit"].btn--ocean {
   background-color: #015780;
   border-color: #015780;
   color: #fff; }
-  .btn--ocean:hover {
+  .btn--ocean:hover,
+  input[type="submit"].btn--ocean:hover {
     color: #FFDD00; }
 
 .btn--large {
@@ -454,7 +462,8 @@ input[type="submit"] {
 
 .btn-group {
   margin: 0.5rem 0; }
-  .btn-group .btn, .btn-group .btn--ocean, .btn-group .btn--large, .btn-group .btn--small {
+  .btn-group .btn, .btn-group .btn--ocean,
+  .btn-group input[type="submit"].btn--ocean, .btn-group .btn--large, .btn-group .btn--small {
     float: left;
     margin: 0;
     margin-left: -1px;
@@ -470,7 +479,8 @@ input[type="submit"] {
   margin: 0.5rem;
   margin-left: -4px;
   display: inline-block; }
-  .btn-group--vertical .btn, .btn-group--vertical .btn--ocean, .btn-group--vertical .btn--large, .btn-group--vertical .btn--small {
+  .btn-group--vertical .btn, .btn-group--vertical .btn--ocean,
+  .btn-group--vertical input[type="submit"].btn--ocean, .btn-group--vertical .btn--large, .btn-group--vertical .btn--small {
     margin: 0;
     margin-top: -1px;
     display: block;
@@ -552,8 +562,11 @@ label, .input-label {
     top: 80px; }
 
 .hero--home {
+  position: relative;
   min-height: 500px;
-  background-image: url(/img/bg-00.png); }
+  background-color: #015780;
+  background-image: url(/img/map.png);
+  overflow: hidden; }
 
 .thumbnail {
   margin: 0.5rem;
@@ -591,7 +604,7 @@ label, .input-label {
   width: 100%;
   height: 70px;
   padding: 0 50px;
-  border-bottom: 1px solid #EEF1F2;
+  box-shadow: inset 0 -1px 0 #EEF1F2;
   background-color: #fff; }
   .nav--primary .logo--primary {
     top: -10px;
@@ -673,6 +686,13 @@ label, .input-label {
     display: block;
     width: 150px;
     height: 150px; }
+  .card--current-conditions .card__section .weather-icon__forecast {
+    margin: 0 auto;
+    display: block;
+    /*
+          width:  50px;
+          height: 50px;
+    */ }
   .card--current-conditions .card__section .kilo {
     display: block;
     margin: 0;
@@ -680,6 +700,18 @@ label, .input-label {
 .card--current-conditions div:last-of-type {
   margin-bottom: 0;
   border-bottom: none; }
+
+#weather_forecast p {
+  float: left;
+  width: 25%;
+  font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #015780; }
+  #weather_forecast p img {
+    max-width: 80%; }
 
 .card--about-us {
   margin: 0;
@@ -722,6 +754,22 @@ label, .input-label {
     color: #fff;
     text-shadow: 0 1px 2px 0 rgba(51, 51, 51, 0.2), 0 1px 3px 0 rgba(51, 51, 51, 0.1); }
 
+.countdown--small {
+  position: absolute;
+  top: 70px;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  font-weight: bold;
+  background-color: #FFDD00;
+  color: #fff; }
+  .countdown--small:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    border-top: 35px solid #FFDD00;
+    border-right: 20px solid transparent;
+    border-left: 0 solid transparent; }
+
 .home-info {
   padding-bottom: 5rem;
   background-color: #EEF1F2;
@@ -729,6 +777,49 @@ label, .input-label {
   background-size: cover;
   background-position: center center; }
 
+.map-anim__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 0 10px rgba(231, 76, 60, 0.5);
+  overflow: hidden; }
+
+.map-anim__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+/*
+.map-route__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 5px solid yellow;
+  z-index: 9999;
+}
+*/
+.race-marker, .race-marker--start, .race-marker--finish {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #FFDD00;
+  z-index: 20; }
+
+.race-marker--start {
+  top: 37%;
+  left: 15%; }
+
+.race-marker--finish {
+  top: 38%;
+  left: 20%; }
+
+@keyframes mapZoom {
+  100% {
+    transform: scale(5) translateX(30%) translateY(20%); } }
 /*  § UTILITIES  */
 /*  -----------  */
 .u-float--right {

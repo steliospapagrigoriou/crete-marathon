@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <meta http-equiv="author" content="Damn Fine - damnfine.io">
+  <meta http-equiv="author" content="">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=1">
   
@@ -31,27 +31,33 @@
     </div>
   </nav>
   
+  <div class="countdown--small">
+    <span class="js-days-left countdown--small__days"></span>
+    <span class="countdown--small__copy">Training days left</span>
+  </div>
+  
   
   
   <section class="hero--home" id="home_hero">
+    
     <div class="container">
       
       <div class="three columns offset-by-nine card--current-conditions">
-        <a class="close">&times;</a>
         
         <div class="card__section">
           <span class="input-label">Current Conditions</span>
-          <img class="weather-icon" src="/img/icon-weather.png">
+          <img id="weather_icon" class="weather-icon" src="">
         </div>
         
         <div class="card__section">
           <span class="input-label">Temperature</span>
-          <span class="kilo">14&deg;</kilo>
+          <span id="weather_temperature" class="kilo"></kilo>
         </div>
         
-        <!--<div class="card__section">
+        <div class="card__section">
           <span class="input-label">Forecast</span>
-        </div>-->
+          <div id="weather_forecast"></div>
+        </div>
       </div>
       
       <div class="twelve columns form--booking">
@@ -144,7 +150,7 @@
       
       <hgroup class="twelve columns u-text-center">
         <h3>Only</h3>
-        <span class="mega">145 TRAINING DAYS LEFT</span>
+        <span class="mega"><span class="js-days-left"></span> TRAINING DAYS LEFT</span>
         <h3>Before Crete Marathon 2015</h3>
       </hgroup>
       
@@ -185,9 +191,8 @@
     <small>&copy; Crete Marathon, 2015</small>
   </footer>
   
-  
-  
-  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/moment/min/moment.min.js"></script>
   <script src="/js/crete.js"></script>
 </body>
 </html>
